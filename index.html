@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+</head>
+<body>
+    <h1>Array Manipulation</h1>
+
+    <form>
+        <label>Name</label>
+        <input type="text" id="name">
+        <label>Email</label>
+        <input type="text" id="email">
+        <label>Mobile</label>
+        <input type="text" id="mobileNumber">
+        <button type="button" onclick="getInput()">Submit</button>
+        <button type="button" onclick="addElementToTop()">Add Element To Top</button>
+        <button type="button" onclick="removeLastElement()">Remove Last Data</button>
+        <button type="button" onclick="removeElementAtindex()">remove Element At index</button>
+        <button type="button" onclick="addElementAtindex()">add Element At index</button>
+
+    </form>
+<div id="table"></div>
+<script type="module">
+    import {createTableView} from "./createTableView.js";
+    import {getInput} from "./appendData.js";
+    import {addElementToTop} from "./addElementToTop.js";
+    import { removeLastElement } from "./removeLastElement.js";
+    import { removeElementAtindex } from "./removeElementAtIndex.js";
+    import { addElementAtindex} from "./addElementAtIndex.js";
+    window.getInput =getInput;
+   window.addElementToTop= addElementToTop;
+   window.removeLastElement = removeLastElement;
+   window.removeElementAtindex = removeElementAtindex;
+   window.addElementAtindex = addElementAtindex;
+</script>
+ 
+</body>
+</html>
